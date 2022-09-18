@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+  <link rel="stylesheet" href="style.css" />
+  <link
+    rel="icon"
+    href="/ecommerce-product-page-main/images/favicon-32x32.png"
+  />
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ecommerce-product-page</title>
+  </head>
+  <body>
+    <div class="modal hidden">
+      <button class="closeBtn">
+        <img src="/ecommerce-product-page-main/images/icon-close.svg"/>
+      </button>
+      <div class="arrow arrowLeft">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="btn--arrow"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M15 19l-7-7 7-7"
+          />
+        </svg>
+      </div>
+      <div class="arrow arrowRight">
+        <svg xmlns="http://www.w3.org/2000/svg" class="btn--arrow" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+        </svg>
+        </svg>
+      </div>
+      <div class="slider">
+        <img
+        class="main--img--big--el--modal  slide"
+        src="ecommerce-product-page-main/images/image-product-1.jpg"
+        alt="Picture of shoes"
+        />
+       
+      </div>
+      <div class="main--img--small--box--modal">
+        <img
+          class="main--img--small active"
+          id="main--img--small11"
+          src="ecommerce-product-page-main/images/image-product-1.jpg"
+          alt="Picture of shoes"
+        />
+        <img
+          class="main--img--small"
+          id="main--img--small22"
+          src="ecommerce-product-page-main/images/image-product-2.jpg"
+          alt="Picture of shoes"
+        />
+        <img
+          class="main--img--small"
+          id="main--img--small33"
+          src="ecommerce-product-page-main/images/image-product-3.jpg"
+          alt="Picture of shoes"
+        />
+        <img
+          class="main--img--small"
+          id="main--img--small44"
+          src="ecommerce-product-page-main/images/image-product-4.jpg"
+          alt="Picture of shoes"
+        />
+      </div>
+    </div>
+    <div class="overlay hidden"></div>
+    
+    <nav>
+      <div class="nav--box">
+        <div class="nav--box--left">
+          <button class="nav--icon--menu">
+
+            <img
+            class="nav--icon nav--icon--menu"
+            src="ecommerce-product-page-main/images/icon-menu.svg"
+            />
+          </button>
+              <div>
+
+                <img
+                class="nav--logo"
+                src="ecommerce-product-page-main/images/logo.svg"
+                alt="logo"
+                />
+              </div>
+          <ul class="nav--list">
+            <div class="dropdown--box">
+              <button class="dropbtn">Collections</button>
+              <div class="dropdown--content">
+                <a class="submenu--element">Winter</a>
+                <a class="submenu--element">Spring</a>
+                <a class="submenu--element">Summer</a>
+                <a class="submenu--element last--child">Fall</a>
+              </div>
+              <!-- <ul class="nav--submenu hidden">
+                  <a><li class="submenu--element">Winter</li></a>
+                  <a><li class="submenu--element">Spring</li></a>
+                  <a><li class="submenu--element">Summer</li></a>
+                  <a><li class="submenu--element last--child">Fall</li></a>
+                </ul> -->
+            </div>
+            
+            <a class="nav--link"><li>Men</li></a>
+            <a class="nav--link"><li>Women</li></a>
+            <a class="nav--link"><li>About</li></a>
+            <a class="nav--link"><li>Contact</li></a>
+          </ul>
+        </div>
+        
+        <div class="nav--box--right">
+          <div class="nav--icon--box">
+            <button class="cartBtn">
+              <img
+              class="nav--icon"
+              src="ecommerce-product-page-main/images/icon-cart.svg"
+              />
+              <p class="inCart hidden">1</p>
+            </button>
+          </div>
+          <img
+            class="nav--avatar"
+            src="ecommerce-product-page-main/images/image-avatar.png"
+          />
+        </div>
+        <div class="nav--list--mobile hidden">
+          <button class="closeBtnMobile">
+            <img src="/ecommerce-product-page-main/images/icon-close.svg" class='closeImg'/> 
+          </button>
+          <a class="nav--link"><li>Collections</li></a>
+          <a class="nav--link"><li>Men</li></a>
+          <a class="nav--link"><li>Women</li></a>
+          <a class="nav--link"><li>About</li></a>
+          <a class="nav--link"><li>Contact</li></a></div>
+          <div class="background hidden"></div>
+      </div>
+      <div class="addToCart--message hidden">
+        <p class="message">Item was sucsessfully added to cart</p>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="message--icon"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M5 13l4 4L19 7"
+          />
+        </svg>
+      </div>
+    </nav>
+    <section>
+      <div class="main--box">
+        <div class="main--img--box">
+          <div class="main--img--big">
+            <img
+              class="main--img--big--el"
+              src="ecommerce-product-page-main/images/image-product-1.jpg"
+              alt="Picture of shoes"
+            />
+            <button class=" arrowL">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="btn--arrow"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M15 19l-7-7 7-7"
+                />
+              </svg>
+            </button>
+            <button class=" arrowR">
+              <svg xmlns="http://www.w3.org/2000/svg" class="btn--arrow" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+              </svg>
+              </svg>
+            </button>
+          </div>
+          <div class="main--img--small--box">
+            <img
+              class="main--img--small active"
+              id="main--img--small1"
+              src="ecommerce-product-page-main/images/image-product-1.jpg"
+              alt="Picture of shoes"
+            />
+            <img
+              class="main--img--small"
+              id="main--img--small2"
+              src="ecommerce-product-page-main/images/image-product-2.jpg"
+              alt="Picture of shoes"
+            />
+            <img
+              class="main--img--small"
+              id="main--img--small3"
+              src="ecommerce-product-page-main/images/image-product-3.jpg"
+              alt="Picture of shoes"
+            />
+            <img
+              class="main--img--small"
+              id="main--img--small4"
+              src="ecommerce-product-page-main/images/image-product-4.jpg"
+              alt="Picture of shoes"
+            />
+          </div>
+        </div>
+        <div class="main--text--box">
+          <p class="main--orange--text">Sneaker Company</p>
+          <h1 class="main--heading">Fall Limited Edition Sneakers</h1>
+          <p class="main--text">
+            These low-profile sneakers are your perfect casual wear companion.
+            Featuring a durable rubber outer sole, they’ll withstand everything
+            the weather can offer.
+          </p>
+          <div class="main--price--mobile">
+            <div class="main--price--box">
+              <p class="main--price">$125.00</p>
+              <p class="main--prom">50%</p>
+            </div>
+            <s class="main--past--price">$250.00</s>
+          </div>
+          <div class="main--add--cart">
+            <div class="main--plusminus--box">
+              
+                <img src="ecommerce-product-page-main/images/icon-minus.svg" class="main--minus"/>
+              
+              <p class="main--number">1</p>
+             
+                <img src="ecommerce-product-page-main/images/icon-plus.svg" class="main--plus"/>
+              
+            </div>
+            <div class="main--button--box">
+              <img
+                class="main--button--icon"
+                src="ecommerce-product-page-main/images/icon-cart.svg"
+              />
+              <a class="main--button--link">Add to cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cart--box itemsInCart hidden">
+        <img
+        class="cart--img"
+        src="ecommerce-product-page-main/images/image-product-1.jpg"
+        alt="Picture of shoes"
+        />
+        <div class="cart--text">
+    
+        <h6 class="cart--title">Fall Limited Edition Sneakers</h6>
+        <p class="cart--number"><span class='cartNumberOfItems'>1</span> x 125$ = <span class='cartPriceOfItems'>125</span>$</p>
+    
+        </div>
+    
+        <img class="cart--delete" src="/ecommerce-product-page-main/images/icon-delete.svg"/>
+       
+            </div>
+            <div class="cart--box noItemsInCart hidden">
+              <h2 class="no--items">No items in cart</h2>
+            </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
